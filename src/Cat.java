@@ -24,7 +24,7 @@ public class Cat {
 	public void draw(Graphics g, int catX, int catY)
 	{
 		Graphics2D g2 = (Graphics2D) g;
-		int x=catX;
+		int x=catX+10;
 		int y=catY;
 		// Draw the head
 		g2.setColor(Color.cyan);
@@ -44,6 +44,6 @@ public class Cat {
 		g2.setColor(Color.black);
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
-		g2.drawString("My name is mister meow", catX, catY+HEAD_DIMENSION+10);	
+		g2.drawString("My name is mister meow", catX-40, catY+HEAD_DIMENSION+10);	
 	}
 }
